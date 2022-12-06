@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D837E45A293FCF51007F38C3 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837E458293FCF51007F38C3 /* ItemCollectionViewCell.swift */; };
+		D837E45B293FCF51007F38C3 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D837E459293FCF51007F38C3 /* ItemCollectionViewCell.xib */; };
+		D8486720293FE29D00F3D625 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D848671F293FE29D00F3D625 /* ImageViewController.swift */; };
 		E02CEBFC29266C4300F3EA92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02CEBFB29266C4300F3EA92 /* AppDelegate.swift */; };
 		E02CEBFE29266C4300F3EA92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02CEBFD29266C4300F3EA92 /* SceneDelegate.swift */; };
 		E02CEC0029266C4300F3EA92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02CEBFF29266C4300F3EA92 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D837E458293FCF51007F38C3 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		D837E459293FCF51007F38C3 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		D848671F293FE29D00F3D625 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		E02CEBF829266C4300F3EA92 /* photoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02CEBFB29266C4300F3EA92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E02CEBFD29266C4300F3EA92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D837E453293FC0AB007F38C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D837E458293FCF51007F38C3 /* ItemCollectionViewCell.swift */,
+				D837E459293FCF51007F38C3 /* ItemCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E02CEBEF29266C4300F3EA92 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +75,13 @@
 		E02CEBFA29266C4300F3EA92 /* photoPicker */ = {
 			isa = PBXGroup;
 			children = (
+				D837E453293FC0AB007F38C3 /* Views */,
 				E02CEBFB29266C4300F3EA92 /* AppDelegate.swift */,
 				E02CEC0F2926839400F3EA92 /* FaceIDManager.swift */,
 				E02CEC11292689CB00F3EA92 /* UITextFieldExtensions.swift */,
 				E02CEBFD29266C4300F3EA92 /* SceneDelegate.swift */,
 				E02CEBFF29266C4300F3EA92 /* ViewController.swift */,
+				D848671F293FE29D00F3D625 /* ImageViewController.swift */,
 				E02CEC0129266C4300F3EA92 /* Main.storyboard */,
 				E02CEC0429266C4500F3EA92 /* Assets.xcassets */,
 				E02CEC0629266C4500F3EA92 /* LaunchScreen.storyboard */,
@@ -133,6 +150,7 @@
 			files = (
 				E02CEC0829266C4500F3EA92 /* LaunchScreen.storyboard in Resources */,
 				E02CEC0529266C4500F3EA92 /* Assets.xcassets in Resources */,
+				D837E45B293FCF51007F38C3 /* ItemCollectionViewCell.xib in Resources */,
 				E02CEC0329266C4300F3EA92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,8 +165,10 @@
 				E02CEC0029266C4300F3EA92 /* ViewController.swift in Sources */,
 				E02CEC102926839400F3EA92 /* FaceIDManager.swift in Sources */,
 				E02CEC12292689CB00F3EA92 /* UITextFieldExtensions.swift in Sources */,
+				D8486720293FE29D00F3D625 /* ImageViewController.swift in Sources */,
 				E02CEBFC29266C4300F3EA92 /* AppDelegate.swift in Sources */,
 				E02CEBFE29266C4300F3EA92 /* SceneDelegate.swift in Sources */,
+				D837E45A293FCF51007F38C3 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCollectionViewCell" id="gTV-IL-0wX" customClass="ItemCollectionViewCell" customModule="photoPicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="245"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jmd-Cs-vlB">
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="245"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jmd-Cs-vlB" secondAttribute="trailing" id="1AB-kR-5cE"/>
+                <constraint firstItem="jmd-Cs-vlB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3fE-pf-XHI"/>
+                <constraint firstAttribute="bottom" secondItem="jmd-Cs-vlB" secondAttribute="bottom" id="A0k-7H-lql"/>
+                <constraint firstItem="jmd-Cs-vlB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="djf-Lo-zkR"/>
+            </constraints>
+            <size key="customSize" width="339" height="245"/>
+            <connections>
+                <outlet property="photoImageView" destination="jmd-Cs-vlB" id="JfK-Ci-cdv"/>
+            </connections>
+            <point key="canvasLocation" x="243.51145038167937" y="88.380281690140848"/>
+        </collectionViewCell>
+    </objects>
+</document>

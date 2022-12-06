@@ -27,28 +27,69 @@
                                     <action selector="pickPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z02-Hh-vtn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I9a-Xf-LR0">
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGS-4j-xrE">
                                 <rect key="frame" x="0.0" y="59" width="393" height="719"/>
-                            </imageView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="wdT-d0-d6x">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="NJT-7u-MRo"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="17U-rw-qv0"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="JGS-4j-xrE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Mx-rM-Zd2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JGS-4j-xrE" secondAttribute="trailing" id="Ele-Z8-LXA"/>
+                            <constraint firstItem="JGS-4j-xrE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JJg-8S-JId"/>
                             <constraint firstItem="Jnh-KX-MZ1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vqh-FA-oso"/>
-                            <constraint firstItem="I9a-Xf-LR0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wr9-bz-gxI"/>
                             <constraint firstItem="Jnh-KX-MZ1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZOE-lS-ejG"/>
-                            <constraint firstItem="I9a-Xf-LR0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZWa-II-gdS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I9a-Xf-LR0" secondAttribute="trailing" id="cYe-JH-Idh"/>
-                            <constraint firstItem="Jnh-KX-MZ1" firstAttribute="top" secondItem="I9a-Xf-LR0" secondAttribute="bottom" id="mIb-Vk-fGp"/>
+                            <constraint firstItem="Jnh-KX-MZ1" firstAttribute="top" secondItem="JGS-4j-xrE" secondAttribute="bottom" id="ydg-Uv-NKN"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="I9a-Xf-LR0" id="488-nf-H7b"/>
+                        <outlet property="collectionView" destination="JGS-4j-xrE" id="uD0-u2-9eH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="103" y="4"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="ES9-Yu-nJ7">
+            <objects>
+                <viewController storyboardIdentifier="ImageViewController" id="1IH-zZ-Rdx" customClass="ImageViewController" customModule="photoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KUn-xS-VNn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jdz-Hj-QcC">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lN7-3v-0bG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jdz-Hj-QcC" secondAttribute="bottom" id="7FS-Gs-jc1"/>
+                            <constraint firstItem="lN7-3v-0bG" firstAttribute="trailing" secondItem="Jdz-Hj-QcC" secondAttribute="trailing" id="f2J-tZ-HUh"/>
+                            <constraint firstItem="Jdz-Hj-QcC" firstAttribute="leading" secondItem="lN7-3v-0bG" secondAttribute="leading" id="kiC-wM-RlS"/>
+                            <constraint firstItem="Jdz-Hj-QcC" firstAttribute="top" secondItem="KUn-xS-VNn" secondAttribute="top" id="uIO-Nb-YIM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Jdz-Hj-QcC" id="2ex-qk-naZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kON-gu-QgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="4"/>
         </scene>
     </scenes>
     <resources>
